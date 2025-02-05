@@ -1,0 +1,24 @@
+{
+    "drinks": [
+        {
+            "id": "3221353D-DFAC-4BD9-8624-D4810A02F285",
+            "name": "water",
+            "waterPercentage": 100
+        },
+        {
+            "id": "B6C978D6-4943-4463-8D43-56571EE50284",
+            "name": "coffee",
+            "waterPercentage": 80
+        },
+        {
+            "id": "1CCF7094-D58D-4A09-B15B-AD579603B9F9",
+            "name": "milk",
+            "waterPercentage": 40
+        },
+        {
+            "id": "2DA502E1-06C1-4F9C-97B4-74BECA5C154A",
+            "name": "tea",
+            "waterPercentage": 5
+        }
+    ]
+}
