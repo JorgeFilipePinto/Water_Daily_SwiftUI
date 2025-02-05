@@ -24,7 +24,7 @@ struct MenuView: View {
                     Section {
                         ForEach(drinks.drinks) { drink in
                             NavigationLink {
-                                CustomizationDrink(drink: drink)
+                                CustomizationDrinkView(drink: drink)
                                     .environmentObject(waterViewModel)
                                     .onAppear() {
                                         print("\(drink.name) selected")

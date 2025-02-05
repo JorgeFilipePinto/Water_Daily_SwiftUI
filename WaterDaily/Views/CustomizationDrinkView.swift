@@ -8,10 +8,10 @@
 import SwiftUI
 
 
-struct CustomizationDrink: View {
+struct CustomizationDrinkView: View {
     
     @Environment(\.dismiss) var dimiss
-    @EnvironmentObject var waterVeiwModel: WaterViewModel
+    @EnvironmentObject var waterViewModel: WaterViewModel
 
 
     let drink: DrinkSections
@@ -38,7 +38,8 @@ struct CustomizationDrink: View {
                 }
             }
             Button("Insert") {
-                waterVeiwModel.addWater(size)
+                waterViewModel.addWater(size)
+                waterViewModel.updateProgress()
                 dimiss()
             }
             .padding()
@@ -50,6 +51,6 @@ struct CustomizationDrink: View {
 
 
 #Preview {
-    CustomizationDrink(drink: DrinkSections.example)
+    CustomizationDrinkView(drink: DrinkSections.example)
         .environmentObject(WaterViewModel())
 }

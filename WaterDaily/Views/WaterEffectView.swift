@@ -49,12 +49,12 @@ struct WaterEffectView: Shape {
 
 }
 
-/*
+
 struct WaterEffect_Previews: PreviewProvider {
     static var previews: some View {
-        WaterEffect(progress: 0.4, phase: 0.0)
+        WaterEffectView(progress: 0.4, phase: 0.0)
             .fill(Color.blue)
             .ignoresSafeArea()
     }
 }
-*/
+
